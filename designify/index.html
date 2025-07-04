@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designify - AI Animation Agent</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon gradient-bg"></span>
+            Designify
+        </div>
+        <div class="nav-auth">
+            <button class="login-btn">Log in</button>
+            <button class="signup-btn">Sign up</button>
+        </div>
+    </nav>
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Animate your ideas and <span class="gradient-text">Designs</span></h1>
+            <p class="subtitle">Create animations and designs by chatting with AI</p>
+            <form class="prompt-bar" autocomplete="off" onsubmit="return false;">
+                <textarea class="prompt-input" placeholder="Bring it to life..."></textarea>
+                <button class="prompt-arrow" type="submit">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" stroke="white"/><path d="M13 6l6 6-6 6" stroke="white"/></svg>
+                </button>
+            </form>
+            <div class="use-case-box" id="use-case-box"></div>
+        </div>
+        <div class="background-anim" id="background-anim"></div>
+    </main>
+    
+    <!-- Just an Idea Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Just an Idea</h2>
+            <div class="particle-container">
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+              <div class="particle"></div>
+            </div>
+            <div class="idea-message">
+              <span class="idea-text">You can make cool stuff like this</span>
+              <div class="idea-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"/>
+                  <path d="M12 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Designify has revolutionized how I create designs. It's incredibly intuitive and powerful."</p>
+                    <cite>- Sarah Johnson, Designer</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The AI suggestions are spot-on and have saved me countless hours of work."</p>
+                    <cite>- Michael Chen, Developer</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I've never seen an AI tool that understands design principles so well. It's like having a design partner."</p>
+                    <cite>- Emma Rodriguez, Creative Director</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The animation capabilities are mind-blowing. I can create complex animations in minutes instead of hours."</p>
+                    <cite>- David Kim, Motion Designer</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"As a startup founder, Designify has been a game-changer for our product demos and presentations."</p>
+                    <cite>- Lisa Wang, CEO</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The interface is so clean and the results are consistently impressive. It's become my go-to design tool."</p>
+                    <cite>- James Wilson, UI/UX Designer</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I love how it understands context and suggests relevant animations. It's like it reads my mind!"</p>
+                    <cite>- Maria Garcia, Frontend Developer</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The learning curve is minimal, but the possibilities are endless. Perfect for both beginners and pros."</p>
+                    <cite>- Alex Thompson, Digital Artist</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Finally, an AI tool that doesn't just generate content but truly enhances the creative process."</p>
+                    <cite>- Rachel Park, Brand Strategist</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The collaboration features are fantastic. My team can now work together seamlessly on animations."</p>
+                    <cite>- Tom Anderson, Project Manager</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I've tried many AI design tools, but Designify stands out with its attention to detail and quality."</p>
+                    <cite>- Sophia Lee, Art Director</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The export options are comprehensive, and the quality is always top-notch. Highly recommended!"</p>
+                    <cite>- Chris Martinez, Video Producer</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"It's amazing how it can take a simple idea and turn it into something visually stunning."</p>
+                    <cite>- Olivia Brown, Marketing Specialist</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The customer support is exceptional, and the regular updates keep making it better."</p>
+                    <cite>- Daniel Clark, Freelance Designer</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Designify has become an essential part of my creative workflow. It's like having a superpower!"</p>
+                    <cite>- Nina Patel, Digital Creator</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The way it handles complex animations while maintaining performance is impressive."</p>
+                    <cite>- Ryan Foster, Web Developer</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I can create professional-quality animations without any prior experience. It's that intuitive."</p>
+                    <cite>- Maya Singh, Content Creator</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The integration with other design tools is seamless. It fits perfectly into my existing workflow."</p>
+                    <cite>- Kevin Zhang, Product Designer</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="lazy-note">
+        <p>***Please note that this is a static page... i was too lazy to connect API's to this</p>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html> 
