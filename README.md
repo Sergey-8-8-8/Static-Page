@@ -1,3 +1,40 @@
+# Anime.js Project
+
+This repository contains the anime.js animation library along with a sample web application.
+
+## Project Structure
+
+- `src/` - Anime.js library source code
+- `lib/` - Built library files
+- `designify/` - Sample web application
+- `examples/` - Animation examples
+- `tests/` - Test files
+
+## Designify Web App
+
+The main web application is located in the `designify/` folder. This is a Node.js server application that serves a static website.
+
+### Local Development
+
+```bash
+cd designify
+npm start
+```
+
+The app will be available at `http://localhost:3000`
+
+### Deployment
+
+This project is configured for deployment on Vercel. The `vercel.json` file specifies that the `designify/server.js` file should be used as the main entry point.
+
+## Anime.js Library
+
+Anime.js is a lightweight JavaScript animation library. For more information, visit [animejs.com](https://animejs.com).
+
+## License
+
+MIT License
+
 # Anime.js
 
 <p align="center">
